@@ -1,6 +1,6 @@
 {
     "type": "record",
-    "name": "Person",
+    "name": "PersonAvro",
     "namespace": "com.github.fabricio.registryservice.schema",
     "fields": [
     {
