@@ -1,0 +1,18 @@
+{
+    "type": "record",
+    "name": "Person",
+    "namespace": "com.github.fabricio.registryservice.schema",
+    "fields": [
+    {
+        "name": "id",
+        "type": "long"
+    },
+    {
+        "name": "firstName",
+        "type": "string"
+    },
+    {
+        "name": "lastName",
+        "type": "string"
+    }]
+}
