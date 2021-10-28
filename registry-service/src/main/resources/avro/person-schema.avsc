@@ -4,8 +4,8 @@
     "namespace": "com.github.fabricio.registryservice.schema",
     "fields": [
     {
-        "name": "id",
-        "type": "long"
+        "name": "uuid",
+        "type": "string"
     },
     {
         "name": "firstName",

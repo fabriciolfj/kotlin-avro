@@ -17,3 +17,6 @@ spring:
           idempotence: true
         transactional:
           id: reg
+
+kafka:
+  fraud: fraud-topic

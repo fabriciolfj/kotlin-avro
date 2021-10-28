@@ -1,3 +1,5 @@
+server:
+  port: 9090
 spring:
   application:
     name: fraude-service
@@ -5,12 +7,16 @@ spring:
     bootstrap-servers: 127.0.0.1:9092
     properties:
       schema.registry.url: http://localhost:8081
+      specific.avro.reader: true
     consumer:
       group-id: fraude-svc
       key-serializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: io.confluent.kafka.serializers.KafkaAvroDeserializer
-      auto-offset-reset: latest
+      auto-offset-reset: earliest
       enable-auto-commit:  false
     listener:
       missing-topics-fatal: false
       ack-mode: MANUAL_IMMEDIATE
+
+kafka:
+  fraud: fraud-topic
